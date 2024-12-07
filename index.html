@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHOOMPHAT :)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PHOOMPHAT</h1>
+  </header>
+
+  <main class="container">
+    <div class="sidebar">
+      <ul class="categories">
+        <li><a href="#" data-category="all">ทั้งหมด</a></li>
+        <li><a href="#" data-category="script">สคริปต์</a></li>
+        <li><a href="#" data-category="life">ชีวิต</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="message">คุณเลือกหมวดหมู่ : แสดงทั้งหมด</div>
+      <section class="posts">
+        <article data-category="script">
+          <img src="https://via.placeholder.com/300x200" alt="Script Post">
+          <h2>สคริปต์</h2>
+          <p id="scriptContent"></p>
+        </article>
+        <article data-category="life">
+          <img src="https://via.placeholder.com/300x200" alt="Life Post">
+          <h2>ชีวิต</h2>
+          <p id="lifeContent"></p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

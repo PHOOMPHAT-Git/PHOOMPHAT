@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const category = e.target.getAttribute("data-category");
 
         if (category === "all") {
-          messageBox.textContent = "คุณเลือกหมวดหมู่ : แสดงทั้งหมด";
+          messageBox.textContent = "คุณเลือกหมวดหมู่ : ทั้งหมด";
         } else if (category === "script") {
           messageBox.textContent = "คุณเลือกหมวดหมู่ : สคริปต์";
         } else if (category === "life") {

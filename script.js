@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (category === "all") {
           messageBox.textContent = "คุณเลือกหมวดหมู่ : แสดงทั้งหมด";
-        } else if (category === "tech") {
+        } else if (category === "script") {
           messageBox.textContent = "คุณเลือกหมวดหมู่ : สคริปต์";
-        } else if (category === "travel") {
+        } else if (category === "life") {
           messageBox.textContent = "คุณเลือกหมวดหมู่ : ชีวิต";
         }
 
@@ -55,4 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
         scriptContentElement.textContent = 'ไม่สามารถโหลดข้อความได้';
         lifeContentElement.textContent = 'ไม่สามารถโหลดข้อความได้';
     });
+});
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+document.addEventListener('mousedown', function(e) {
+    if (e.button === 0) {
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+    }
 });

@@ -39,7 +39,7 @@ p {
   
 .container {
     display: flex;
-    height: 100vh;
+    height: 150vh;
 }
   
 .sidebar {
@@ -100,7 +100,7 @@ article h2 {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
   
 ::-webkit-scrollbar-track {
